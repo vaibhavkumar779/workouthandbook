@@ -108,7 +108,7 @@
                             <tr><td><strong>THU</strong></td><td>3 Paneer Stuffed Wheat Rotis (70g)</td><td>3 Rotis + Yellow Dal + Mixed Veggies</td><td>1.5 Cups White Rice + 150g Soya Chaap Curry</td><td>4 Boiled Eggs (2 Whole + 2 Whites)</td></tr>
                             <tr><td><strong>FRI</strong></td><td>2 Whole Eggs Omelette + 2 Toast</td><td>3 Rotis + Kala Chana Curry + Salad</td><td>1.5 Cups White Rice + 100g low-fat Paneer</td><td>4 Boiled Eggs (2 Whole + 2 Whites)</td></tr>
                             <tr><td><strong>SAT</strong></td><td>1.5 Cups Veg Upma + 100g Curd</td><td>3 Rotis + 100g Chicken Curry + Dal</td><td>1.5 Cups White Rice + Thick Rajma bowl</td><td>4 Boiled Eggs (2 Whole + 2 Whites)</td></tr>
-                            <tr><td><strong>SUN</strong></td><td>3 Moong Dal Chillas (50g Paneer)</td><td>3 Rotis + Dal + 100g Curd + Salad</td><td>Controlled Restaurant Pick (Pg 5 Variant)</td><td>4 Boiled Eggs (2 Whole + 2 Whites)</td></tr>
+                            <tr><td><strong>SUN</strong></td><td>3 Moong Dal Chillas (50g Paneer)</td><td>3 Rotis + Dal + 100g Curd + Salad</td><td>Controlled Restaurant Pick (Controlled Outing)</td><td>4 Boiled Eggs (2 Whole + 2 Whites)</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -269,10 +269,10 @@
                             </tr>
                             <tr>
                                 <td>EZ-Bar Bicep Curls</td>
+                                <td>Grip bar on outer angled ridges to reduce strain on inner wrist. Switch to cables if discomfort arises.</td>
                                 <td>Bicep Short Head</td>
                                 <td>3 Sets x 12 Reps</td>
                                 <td>60 Secs</td>
-                                <td>Grip bar on outer angled ridges to reduce strain on inner wrist. Switch to cables if discomfort arises.</td>
                             </tr>
                             <tr>
                                 <td><strong>SAT:<br>Engine</strong></td>
@@ -376,6 +376,12 @@
     </div>
 
     <script>
+        // Strict Session Access Control Guard Hook
+        if (sessionStorage.getItem('auth_vaibhav') !== 'authorized_clearance_granted') {
+            alert('Access Denied. Redirecting to central authentication gateway.');
+            window.location.href = 'index.html';
+        }
+
         const BASELINE_MASS = 67.0;
         let userTrackingLogs = [];
         document.getElementById('logDate').value = new Date().toISOString().split('T')[0];
@@ -428,8 +434,6 @@
             });
         }
 
-        document.forms[0] ? document.forms[0].addEventListener('submit', handleLogSubmission) : null;
-
         function downloadCSVData() {
             let csvContent = "data:text/csv;charset=utf-8,Date,Weight_kg,Daily_Steps,Sleep_Hours,Wrist_Pain_Level\n";
             userTrackingLogs.forEach(r => { csvContent += `${r.date},${r.weight},${r.steps},${r.sleep},${r.wrist}\n`; });
@@ -439,11 +443,6 @@
             document.body.appendChild(anchor);
             anchor.click();
             document.body.removeChild(anchor);
-        }
-        // Strict Session Access Control Guard Hook
-        if (sessionStorage.getItem('auth_vaibhav') !== 'authorized_clearance_granted') {
-            alert('Access Denied. Redirecting to central authentication gateway.');
-            window.location.href = 'index.html';
         }
     </script>
 </body>
