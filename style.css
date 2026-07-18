@@ -27,6 +27,18 @@ body.akash-theme {
     --table-th-text: #ccfbf1;
 }
 
+/* Shalini Profile Token Sets */
+body.shalini-theme {
+    --primary: #8b5cf6;
+    --primary-hover: #7c3aed;
+    --header-gradient: linear-gradient(135deg, #5b21b6, #1e293b);
+    --table-th-bg: #5b21b6;
+    --table-th-text: #ddd6fe;
+}
+.profile-card.shalini { border-top: 5px solid #8b5cf6; }
+.badge-shalini { background: #4c1d95; color: #ddd6fe; }
+.btn-shalini { background: #8b5cf6; } .btn-shalini:hover { background: #7c3aed; }
+
 /* Base Document Configuration */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
