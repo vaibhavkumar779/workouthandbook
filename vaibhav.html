@@ -379,6 +379,7 @@
 
     <script>
         if (sessionStorage.getItem('auth_vaibhav') !== 'authorized_clearance_granted') {
+            alert('Access Denied. Redirecting to central authentication gateway.');
             window.location.href = 'index.html';
         }
 
