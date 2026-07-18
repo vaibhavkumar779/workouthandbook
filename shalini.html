@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalini - Interactive Fat Loss & Core Rehab Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="shalini-theme">
+    <div class="container">
+        <a href="index.html" class="back-portal-link">← Back to Portal Gateway</a>
+        
+        <header class="dashboard-header">
+            <div class="header-title">
+                <h1>Shalini's Home & Gym Command Center</h1>
+                <p>Target Framework: 76kg → 65kg | Horizon: January 2027</p>
+            </div>
+            <div class="header-stats">
+                <div class="stat-pill"><span>Energy Budget</span><strong>1800 kcal</strong></div>
+                <div class="stat-pill"><span>Protein Cap</span><strong>135g</strong></div>
+                <div class="stat-pill"><span>Core Safety</span><strong style="color: var(--accent-success);">C-Sec Safe</strong></div>
+            </div>
+        </header>
+
+        <nav class="tab-navigation">
+            <button class="nav-tab active" onclick="switchTab('profile')">1. Target Framework & Profile</button>
+            <button class="nav-tab" onclick="switchTab('diet')">2. High-Protein Rice & Veg Menu</button>
+            <button class="nav-tab" onclick="switchTab('workout')">3. Pelvic-Safe Movement Plans</button>
+            <button class="nav-tab" onclick="switchTab('tracker')">4. Analytics & CSV Storage Engine</button>
+        </nav>
+
+        <!-- TAB 1: PROFILE -->
+        <div id="page-profile" class="dashboard-page active">
+            <div class="card">
+                <h2>Baseline Variables & Operational Targets</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Target Variable</th><th>Baseline Value</th><th>Operational Strategy</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Current Weight / Height</strong></td><td>76 kg / 155 cm</td><td>BMI: 31.62 (Obese Class I Calibration Scale)</td></tr>
+                            <tr><td><strong>Goal Mass Target</strong></td><td>65 kg</td><td>Sustainable fat loss while preserving lean tissue status</td></tr>
+                            <tr><td><strong>Occupation Context</strong></td><td>Homemaker (4-year-old child)</td><td>Workouts mapped around school dropping & resting cycles</td></tr>
+                            <tr><td><strong>Physical Considerations</strong></td><td>Mild Piles & C-Section History</td><td>Strict zero pelvic floor straining; no intense vertical impacts</td></tr>
+                            <tr><td><strong>Movement Baseline</strong></td><td>Sedentary (Except light household work)</td><td>Replace phone scrolling blocks with progressive conditioning</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Calculated Nutritional Blueprint Formulas</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Macro Component</th><th>Calculation Basis</th><th>Target Intake</th><th>Daily Caloric Weight</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Daily Energy Limit</strong></td><td>Bodyweight x 24 kcal</td><td><strong>1800 kcal</strong></td><td>100% Total Cap Budget</td></tr>
+                            <tr><td><strong>Daily Protein Allocation</strong></td><td>Bodyweight x 1.8g</td><td><strong>135g</strong></td><td>540 kcal (30.0%)</td></tr>
+                            <tr><td><strong>Daily Lipid Allocation</strong></td><td>Bodyweight x 0.8g</td><td><strong>60g</strong></td><td>540 kcal (30.0%)</td></tr>
+                            <tr><td><strong>Daily Carbohydrates</strong></td><td>Remaining Energy Allocations</td><td><strong>180g</strong></td><td>720 kcal (40.0%)</td></tr>
+                            <tr><td><strong>Fluid Targets (Piles Filter)</strong></td><td>Hydration Baseline Scaling</td><td><strong>3.0 Liters</strong></td><td>Non-negotiable stool management</td></tr>
+                            <tr><td><strong>Dietary Fiber Minimum</strong></td><td>GI Clear Passage Protocol</td><td><strong>35 grams</strong></td><td>High-fiber greens tracking metric</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: NUTRITION & MENU -->
+        <div id="page-diet" class="dashboard-page">
+            <div class="card">
+                <h2>Time-Wise Meal Integration & Household Schedule Balance</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Time Block</th><th>Routine Component</th><th>Nutritional & Tactical Strategy</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>06:00 AM - 06:30 AM</strong></td><td>Wake Up & Hydrate</td><td>Drink 400ml warm water immediately to assist digestive passage.</td></tr>
+                            <tr><td><strong>06:30 AM - 08:30 AM</strong></td><td>Household Operation</td><td>Freshen up, prepare meals for child and family, manage school drop-off.</td></tr>
+                            <tr><td><strong>09:30 AM</strong></td><td><strong>Breakfast Window</strong></td><td>High protein post-work meal. 100g Paneer bhurji or 3 egg whites with 1 toast.</td></tr>
+                            <tr><td><strong>10:30 AM - 01:30 PM</strong></td><td>Rest / Phone Use Block</td><td>Hydration Check: Finish 1 full Liter bottle of water during this window.</td></tr>
+                            <tr><td><strong>01:30 PM</strong></td><td><strong>Lunch Window (Rice Favored)</strong></td><td>1.5 measured cups cooked Basmati Rice + 1 deep bowl Dal + 150g Curd + Salad.</td></tr>
+                            <tr><td><strong>02:30 PM - 04:30 PM</strong></td><td>Afternoon Rest Phase</td><td>Keep physical activity low. Avoid heavy snacking during phone use blocks.</td></tr>
+                            <tr><td><strong>04:30 PM - 05:30 PM</strong></td><td>Conditioning Allocation</td><td>Launch Gym or Home low-impact resistance routine.</td></tr>
+                            <tr><td><strong>06:00 PM</strong></td><td><strong>Evening Snack Window</strong></td><td>1 big plate Fresh Papaya (essential for piles management) + 40g Roasted Chana.</td></tr>
+                            <tr><td><strong>08:30 PM</strong></td><td><strong>Dinner Window (Rice Favored)</strong></td><td>1 cup cooked Rice + 150g Soya chunk curry or Thick Dal + Green vegetable mix.</td></tr>
+                            <tr><td><strong>09:45 PM</strong></td><td>Piles Prophylaxis Protocol</td><td>1 teaspoon Isabgol (Psyllium Husk) mixed in warm water right before bed.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>7-Day High-Protein Mixed Vegetarian Plan (Portion Controlled Rice)</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Day</th><th>Breakfast (9:30 AM)</th><th>Lunch (1:30 PM)</th><th>Snack (6:00 PM)</th><th>Dinner (8:30 PM)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>MON</strong></td><td>3 Besan Chillas stuffed with 40g Paneer</td><td>1.5 Cups Rice + Moong Dal + 100g Curd + Salad</td><td>Papaya Plate + 40g Roasted Chana</td><td>1 Cup Rice + 150g Soya Chunk Curry + Lauki Sabzi</td></tr>
+                            <tr><td><strong>TUE</strong></td><td>*Egg Choice:* 3 Egg Whites Scramble + 1 Toast</td><td>1.5 Cups Rice + Thick Rajma + 100g Curd + Salad</td><td>1 Apple + 1 Cup Low-Sugar Tea</td><td>1 Cup Rice + 100g Grilled Paneer + Tori Sabzi</td></tr>
+                            <tr><td><strong>WED</strong></td><td>1.5 Cups Vegetable Poha + 50g Tofu/Paneer</td><td>1.5 Cups Rice + Chole Curry + 100g Curd + Greens</td><td>Papaya Plate + 40g Roasted Chana</td><td>1 Cup Rice + 1 deep bowl Arhar Dal + Mix Veg</td></tr>
+                            <tr><td><strong>THU</strong></td><td>3 Moong Dal Chillas + 100g fresh Curd</td><td>1.5 Cups Rice + Black Chana Curry + Salad</td><td>1 Orange + 3 Boiled Egg Whites (Optional)</td><td>1.5 Cups Soya Keema Matar + 1 Roti + Salad</td></tr>
+                            <tr><td><strong>FRI</strong></td><td>1.5 Cups Veg Upma + 40g roasted Paneer cubes</td><td>1.5 Cups Rice + Masoor Dal + 100g Curd + Salad</td><td>Papaya Plate + 40g Roasted Chana</td><td>1 Cup Rice + 100g Paneer Bhurji + Cabbage Sabzi</td></tr>
+                            <tr><td><strong>SAT</strong></td><td>*Egg Choice:* 3 Egg Whites Omelette + 1 Toast</td><td>1.5 Cups Rice + Mixed Dal + 100g Curd + Salad</td><td>1 Guava + 1 Cup Buttermilk (Chaas)</td><td>150g Soya Chaap Curry (Low Oil) + 1 Roti + Salad</td></tr>
+                            <tr><td><strong>SUN</strong></td><td>3 Besan Chillas + 50g Curd dip</td><td>1.5 Cups Rice + Rajma + Cooked Bhindi Sabzi</td><td>Papaya Plate + 5 Almonds</td><td>Controlled Vegetarian Restaurant Pick (See Pg 5)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: WORKOUT -->
+        <div id="page-workout" class="dashboard-page">
+            <div class="card">
+                <h2>Core Restoration & Pelvic Safe Conditioning Routine</h2>
+                <div class="alert-box danger">
+                    <strong>Critical Biomechanical Restriction Rules:</strong> 
+                    1. Substitute sudden, unconditioned rope skipping with low-impact steady state (LISS) walking to protect the pelvic floor.<br>
+                    2. Never hold your breath during reps. Always exhale completely as you exert force to prevent high pressure build-up in your pelvic region.
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Target Phase</th><th>Selected Exercise Movements</th><th>Target Sets x Reps</th><th>Focus & Post C-Section Safety Strategy</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Deep Core Activation</strong></td><td>Diaphragmatic Breathing lying flat + Pelvic Tilts</td><td>3 Sets x 10 Controlled Reps</td><td>Re-educates the lower deep core muscles safely after a C-section without placing pressure on the incision line.</td></tr>
+                            <tr><td><strong>Lower Body Foundation</strong></td><td>Supported Bench Box Squats (Bodyweight)</td><td>3 Sets x 12 Reps</td><td>Strengthens your lower body using the gym bench for safety. Ensures zero pulling strain on your lower abdomen.</td></tr>
+                            <tr><td><strong>Posterior Balancing</strong></td><td>Glute Bridges (Lying flat on floor mat)</td><td>3 Sets x 15 Reps</td><td>Activates your glutes and lower back muscles, helping to naturally support your pelvic floor.</td></tr>
+                            <tr><td><strong>Upper Body Support</strong></td><td>Seated Dumbbell Overhead Shoulder Presses</td><td>3 Sets x 10 Reps</td><td>Builds upper body strength comfortably from a supported seated position, removing any balance strain from your core.</td></tr>
+                            <tr><td><strong>Daily Step Allocation</strong></td><td>Steady Paced Treadmill Walk or Outdoor Walk</td><td>35 Minutes Daily Target</td><td>Safer and more effective than rapid rope skipping for long-term fat loss and managing piles.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: TRACKER & CSV ENGINE -->
+        <div id="page-tracker" class="dashboard-page">
+            <div class="grid-2">
+                <div class="card">
+                    <h2>Log Daily Progress Metrics</h2>
+                    <form id="metricsForm" onsubmit="handleLogSubmission(event)">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="logDate">Logging Date</label>
+                                <input type="date" id="logDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="logWeight">Weight (kg)</label>
+                                <input type="number" id="logWeight" step="0.05" min="50" max="100" placeholder="76.0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="logSteps">Minutes Walked</label>
+                                <input type="number" id="logSteps" min="0" max="180" placeholder="35" required>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="logSleep">Sleep Hours</label>
+                                <input type="number" id="logSleep" step="0.5" min="4" max="12" placeholder="7" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="logPiles">Piles Discomfort Status</label>
+                                <select id="logPiles">
+                                    <option value="1">1 - Clear / No Issues</option>
+                                    <option value="2">2 - Minor Sensation Alert</option>
+                                    <option value="3">3 - Irritation Warn (Increase Fluids)</option>
+                                    <option value="4">4 - High Inflammation (Halt Training)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-action">Commit Data Entry</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <h2>GitHub CSV Engine Sync Utility</h2>
+                    <p class="helper-text">Maintain full data history completely free using your repository files:</p>
+                    <ol style="padding-left: 20px; font-size: 0.85rem; line-height: 1.4; color: var(--text-muted); margin: 10px 0;">
+                        <li>Click the button below to compile your logs into a standard clean layout.</li>
+                        <li>Save the file directly as <code style="color: #8b5cf6;">shalini_data.csv</code>.</li>
+                        <li>Commit this file into your GitHub repo root folder to permanently back up your progress.</li>
+                    </ol>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button onclick="downloadCSVData()" class="btn-action btn-csv">Download Updated CSV</button>
+                        <button onclick="navigator.clipboard.writeText(userTrackingLogs.map(r=>Object.values(r).join(',')).join('\n')); alert('CSV copied to clipboard!');" style="background: #475569;" class="btn-action">Copy Raw CSV Text</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Historical Metrics Log Table</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date Logged</th>
+                                <th>Mass Metrics</th>
+                                <th>Net Variant</th>
+                                <th>Minutes Active</th>
+                                <th>Sleep Volume</th>
+                                <th>GI Safety Assessment</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trackerTableRows"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Monthly Food Budget System (~₹4,500 Pure Veg Setup Map)</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr><th>Target Category Allocation</th><th>Items Included Inventory</th><th>Projected Investment Share</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Vegetarian Proteins</strong></td><td>Local Block Paneer (2.5kg monthly) + Thick Curd settings + Moong/Masoor Dals</td><td>₹1,800</td></tr>
+                            <tr><td><strong>Bulk Staples</strong></td><td>Premium Basmati Rice + Whole Wheat Chakki Atta + Poha + Oats</td><td>₹1,000</td></tr>
+                            <tr><td><strong>High-Fiber Produce Cart</strong></td><td>Fresh Papayas (mandatory daily buy) + Apples + Oranges + Lauki + Tori</td><td>₹1,500</td></tr>
+                            <tr><td><strong>Digestive Aids</strong></td><td>1 Large Pack Organic Isabgol (Psyllium Husk)</td><td>₹200</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const BASELINE_MASS = 76.0;
+        let userTrackingLogs = [];
+
+        document.getElementById('logDate').value = new Date().toISOString().split('T')[0];
+
+        window.onload = function() { loadInitialTrackingData(); };
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.dashboard-page').forEach(page => page.classList.remove('active'));
+            document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(`page-${tabId}`).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        function loadInitialTrackingData() {
+            const cache = localStorage.getItem('shalini_fitness_logs');
+            if(cache) {
+                userTrackingLogs = JSON.parse(cache);
+            } else {
+                userTrackingLogs = [
+                    { date: "2026-07-15", weight: 76.0, steps: 35, sleep: 7.0, piles: "1" },
+                    { date: "2026-07-16", weight: 75.8, steps: 40, sleep: 7.5, piles: "2" }
+                ];
+                localStorage.setItem('shalini_fitness_logs', JSON.stringify(userTrackingLogs));
+            }
+            renderTrackingTable();
+        }
+
+        function handleLogSubmission(event) {
+            event.preventDefault();
+            const entry = {
+                date: document.getElementById('logDate').value,
+                weight: parseFloat(document.getElementById('logWeight').value),
+                steps: parseInt(document.getElementById('logSteps').value),
+                sleep: parseFloat(document.getElementById('logSleep').value),
+                piles: document.getElementById('logPiles').value
+            };
+            userTrackingLogs = userTrackingLogs.filter(item => item.date !== entry.date);
+            userTrackingLogs.push(entry);
+            userTrackingLogs.sort((a,b) => new Date(a.date) - new Date(b.date));
+            localStorage.setItem('shalini_fitness_logs', JSON.stringify(userTrackingLogs));
+            renderTrackingTable();
+            document.getElementById('metricsForm').reset();
+            document.getElementById('logDate').value = new Date().toISOString().split('T')[0];
+        }
+
+        function renderTrackingTable() {
+            const targetBody = document.getElementById('trackerTableRows');
+            targetBody.innerHTML = "";
+            if(userTrackingLogs.length === 0) {
+                targetBody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:var(--text-muted);">No logs stored.</td></tr>`;
+                return;
+            }
+            userTrackingLogs.forEach(entry => {
+                const diff = (entry.weight - BASELINE_MASS).toFixed(2);
+                const diffText = diff <= 0 ? `${diff} kg` : `+${diff} kg`;
+                const color = diff <= 0 ? '#10b981' : '#ef4444';
+                let status = `<span style="color:#10b981;">Stabilized</span>`;
+                if(entry.piles >= 3) status = `<span style="color:#f59e0b; font-weight:700;">GI Pressure</span>`;
+
+                targetBody.innerHTML += `
+                    <tr>
+                        <td><strong>${entry.date}</strong></td>
+                        <td>${entry.weight.toFixed(2)} kg</td>
+                        <td style="color:${color}; font-weight:700;">${diffText}</td>
+                        <td>${entry.steps} Mins Walked</td>
+                        <td>${entry.sleep} Hrs</td>
+                        <td>${status}</td>
+                    </tr>`;
+            });
+        }
+
+        function downloadCSVData() {
+            if(userTrackingLogs.length === 0) return;
+            let csvContent = "data:text/csv;charset=utf-8,Date,Weight_kg,Minutes_Active,Sleep_Hours,Piles_Irritation_Level\n";
+            userTrackingLogs.forEach(r => { csvContent += `${r.date},${r.weight},${r.steps},${r.sleep},${r.piles}\n`; });
+            const anchor = document.createElement("a");
+            anchor.setAttribute("href", encodeURI(csvContent));
+            anchor.setAttribute("download", "shalini_data.csv");
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+        }
+
+        function clearTrackingLogs() {
+            if(confirm("Confirm deletion of localized cache repository data?")) {
+                localStorage.removeItem('shalini_fitness_logs');
+                loadInitialTrackingData();
+            }
+        }
+    </script>
+</body>
+</html>
