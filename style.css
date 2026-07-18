@@ -27,7 +27,6 @@ body.akash-theme {
     --table-th-text: #ccfbf1;
 }
 
-/* Shalini Profile Token Sets */
 body.shalini-theme {
     --primary: #8b5cf6;
     --primary-hover: #7c3aed;
@@ -35,9 +34,6 @@ body.shalini-theme {
     --table-th-bg: #5b21b6;
     --table-th-text: #ddd6fe;
 }
-.profile-card.shalini { border-top: 5px solid #8b5cf6; }
-.badge-shalini { background: #4c1d95; color: #ddd6fe; }
-.btn-shalini { background: #8b5cf6; } .btn-shalini:hover { background: #7c3aed; }
 
 /* Base Document Configuration */
 body {
@@ -63,29 +59,32 @@ body {
     align-items: center;
     justify-content: center;
 }
-.portal-container { max-width: 700px; width: 100%; }
+.portal-container { max-width: 900px; width: 100%; }
 .portal-header { text-align: center; margin-bottom: 40px; }
 .portal-header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; color: #f8fafc; }
 .portal-header p { color: var(--text-muted); margin-top: 10px; }
 
 .portal-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
-@media (max-width: 640px) { .portal-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .portal-grid { grid-template-columns: 1fr; } }
 
 .profile-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .profile-card:hover { transform: translateY(-5px); border-color: #475569; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3); }
+.profile-card.bulking { border-top: 5px solid #3b82f6; }
+.profile-card.cutting { border-top: 5px solid #0d9488; }
+.profile-card.shalini { border-top: 5px solid #8b5cf6; }
 
 .profile-card h2 { margin: 0 0 8px 0; font-size: 1.8rem; font-weight: 700; }
 .card-specs { text-align: left; margin: 20px 0; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; }
@@ -94,11 +93,13 @@ body {
 .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; }
 .badge-gain { background: #1e3a8a; color: #93c5fd; }
 .badge-loss { background: #064e3b; color: #a7f3d0; }
+.badge-shalini { background: #4c1d95; color: #ddd6fe; }
 
 /* Global Button Archetypes */
 .btn { display: block; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 700; color: white; transition: all 0.2s; }
 .btn-gain { background: #3b82f6; } .btn-gain:hover { background: #2563eb; }
 .btn-loss { background: #0d9488; } .btn-loss:hover { background: #0f766e; }
+.btn-shalini { background: #8b5cf6; } .btn-shalini:hover { background: #7c3aed; }
 
 /* Dashboard Internal Subpage Elements */
 .dashboard-header {
